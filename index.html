@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--META TAGS-->
+        <meta charset="utf-8">
+        <meta name="description" content="Free apps, games and websites">
+        <meta name="keywords" content="Apps, Games, Websites">
+        <meta name="author" content="Divyansh Jain">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Title and icon-->
+        <link rel="shortcut icon" href="images\icon\favicon.png">
+        <title>Divyansh and Viharsh Publications</title>
+
+        <link rel="stylesheet" href="Lib/fontawesome/css/all.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/brands.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/brands.min.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/fontawesome.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/regular.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/regular.min.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/solid.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/solid.min.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/svg-with-js.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/svg-with-js.min.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/v4-shims.css">
+        <link rel="stylesheet" href="Lib/fontawesome/css/v4-shims.min.css">
+
+        <!--Font awesome js-->
+        <script src="Lib/fontawesome/js/all.js"></script>
+        <script src="Lib/fontawesome/js/all.min.js"></script>
+        <script src="Lib/fontawesome/js/brands.js">
+        
+        </script>
+        <script src="Lib/fontawesome/js/brands.min.js"></script>
+        <script src="Lib/fontawesome/js/conflict-detection.js"></script>
+        <script src="Lib/fontawesome/js/conflict-detection.min.js"></script>
+        <script src="Lib/fontawesome/js/fontawesome.js"></script>
+        <script src="Lib/fontawesome/js/fontawesome.min.js"></script>
+        <script src="Lib/fontawesome/js/regular.js"></script>
+        <script src="Lib/fontawesome/js/regular.min.js"></script>
+        <script src="Lib/fontawesome/js/solid.js"></script>
+        <script src="Lib/fontawesome/js/solid.min.js"></script>
+        <script src="Lib/fontawesome/js/v4-shims.js"></script>
+        <script src="Lib/fontawesome/js/v4-shims.min.js"></script>
+
+        <!--Bootstrapp-->
+        <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap-reboot.css">
+        <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="Lib/menu/menu.css">
+<script src="Lib/menu/menu.js"></script>
+
+<link rel="stylesheet" href="./src/styles/style.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./">Home</a>
+            <a href="https://www.youtube.com/channel/UCL75UBgrAj9UKRJa1Vq9AgQ?view_as=subscriber" id="1">Channel</a>
+            <a href="https://discord.gg/kzMpfSanUu" id="2">Discord</a>
+            <a href="./about" id="3">About us</a>
+            <a href="./contact" id="4">Contact us</a>
+            <a href="./apps">Apps</a>
+            <a href="signup">Sign up</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          
+          
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <div id="main-menu">
+            <span onclick="openNav()"><button><i class="fa fa-bars" id="menu"></i></button></span>
+           <h1 style="text-align: center;"> Hello, <section id="get"></section></h1>
+           <br><br>
+           <br><h2 style="text-align: center;">Get our latest news, apps, information and much more on our website .</h2>
+           <footer>
+               <div id="caller">
+               <ul><li>@<i class="fa fa-copyright"></i> 2020 Divyansh Jain </li>
+                <li>Call us at <a href="callto:9258773439">9258773439</a>
+               , <a href="callto:9258750775">9258750775</a></li>
+               <li> Mail us at <a href="mailto:divyanshviharsh@gmail.com">divyanshviharsh@gmail.com</a></li>
+            </ul></div>
+        <address>
+            <ul>
+                <li>1024</li>
+                <li>Sector-4</li>
+                <li>Avas Vikas Colony</li>
+                <li>Agra</li>
+            </ul>
+        </address></footer>
+            <script>
+        
+                if(localStorage.getItem('email') === null){
+                    document.getElementById('get').innerHTML= 'please sign up';
+                }else{
+                    document.getElementById("get").innerHTML = localStorage.getItem('email');
+                }
+            </script>
+    </body>
+</html>
